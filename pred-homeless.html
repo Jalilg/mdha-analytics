@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Predicting Homelesness</title>
+      <!-- Custom fonts for this template-->
+      <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+      <!-- Custom styles for this template-->
+      <link href="css/sb-admin-2.min.css" rel="stylesheet">
+   </head>
+   <body id="page-top">
+      <!-- Page Wrapper -->
+      <div id="wrapper">
+         <!-- Sidebar -->
+         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+               <div class="sidebar-brand-icon">
+                  <i class="fas fa-house-user"></i>
+               </div>
+               <div class="sidebar-brand-text mx-3">MDHA Analytics</div>
+            </a>
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">
+               <span>System Overview</span></a>
+            </li>
+
+            <li class="nav-item ">
+               <a class="nav-link" href="prov-rank.html">
+               <span>Service Provider Rank</span></a>
+            </li>
+
+            <li class="nav-item active">
+               <a class="nav-link" href="pred-homeless.html">
+               <span>Predicting Homelesness</span></a>
+            </li>
+
+
+            
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+               <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+         </ul>
+         <!-- End of Sidebar -->
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+      <!-- Main Content -->
+      <div id="content">
+               <!-- Topbar -->
+               <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+               <h1 class="h3 mb-0 text-gray-800">Predicting Homelessness</h1>
+
+               </nav>
+               <!-- End of Topbar -->
+         <!-- Begin Page Content -->
+         <div class="container-fluid">
+         </div>
+         <!-- /.container-fluid -->
+         <div class="container-fluid">
+            <!-- Content Row -->
+            <div class="row">
+               <div class = "col">
+                  <!-- Page Heading -->
+                  <h4 class="h6 mb-4 text-gray-800">Who is using Shelter services in the next six months? in the next year? </h4>
+                  <h4 class="h6 mb-4 text-gray-800">Select items in the filters below to see the likelihood of various demographics to experience homelessness. For our predictions, we define homelessness as use of a bed night within an Emergency Shelter Service. </h4>
+
+                  <!-- Service Provider Button -->
+                  <div class="col-sm">
+                     <div class="form-group">
+                        <label for="inputProvider">Service Provider</label>
+                        <select id="inputProvider" class="form-control filter" >
+                           <option selected value="all">All Service Providers </option>
+                           <option value="hfc">Hyden-Terry Family Center </option>
+                           <option value="nlsr">Neelay Sisterhood Rescue </option>
+                           <option value="acod">Adams Center of Dallas</option>
+                           <option value="arbr">Arviso Brotherhod Rescue</option>
+                           <option value="wlfs">Wolff Shelter</option>
+                           <option value="wtsp">Watson Project</option>
+                           <option value="mdrh">Madril House</option>
+                           <option value="hnbr">Han Brotherhod Rescue</option>
+                           <option value="chof">Chavez House of Faith</option>
+                           <option value="flod">Flores Services of Dallas</option>
+                           <option value="cmpr">Campa Rescue </option>
+                           <option value="cvpr">Collins Veteran's Program</option>
+                           <option value="rdrh">Rodriguez House </option>
+                           <option value="nnzc">Nuanez Care</option>
+                           <option value="grfc">Grindeland Family Center </option>
+                           <option value="rdrs">Reed Rescue</option>
+                           <option value="chyd">Choyce House</option>
+                           <option value="fsod">Funk Services of Dallas</option>
+                           <option value="gcdc">Gonzales Community Development Corporation</option>
+                           <option value="ssgm">Sisi Gospel Mission</option>
+                           <option value="crsr">Carson Sisterhood Rescue</option>
+                           <option value="grhc">Garcia Housing Center</option>
+                           <option value="lcod">Lee Center of Dallas</option>
+                           <option value="vcod">Vogt Center of Dallas</option>
+                           <option value="brgm">Braga Gospel Mission</option>
+                           <option value="mshc">Mose Housing Center</option>
+                           <option value="smtr">Smith Rescue</option>
+                           <option value="chgm">Chun Gospel Mission</option>
+                           <option value="bcod">Boxley Center of Dallas</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div class = "col">
+                  <!-- Page Heading -->
+                  <h1 class="h3 mb-4 text-gray-800"></h1>
+                  <div class ="row">
+                     <!-- Ethnicity Button -->
+                     <div class="col-sm">
+                        <div class="form-group">
+                           <label for="inputEthnic">Ethnicity</label>
+                           <select id="inputEthnic" class="form-control filter">
+                              <option value="all">All Ethnicities</option>
+                              <option value="hisp">Hispanic</option>
+                              <option selected value="nonhisp">Non-Hispanic</option>
+                              <option value="dnc">Did Not Respond</option>
+                           </select>
+                        </div>
+                     </div>
+                     <!-- Race Button -->
+                     <div class="col-sm">
+                        <div class="form-group">
+                           <label for="inputRace">Race</label>
+                           <select id="inputRace" class="form-control filter">
+                              <option value="all">All Races</option>
+                              <option value="baa">Black</option>
+                              <option selected value="white">White</option>
+                              <option value="asian">Asian</option>
+                              <option value="other">Other</option>
+                              <option value="dnc">Did Not Respond</option>
+                           </select>
+                        </div>
+                     </div>
+                     <!-- Gender Button -->
+                     <div class="col-sm">
+                        <div class="form-group">
+                           <label for="inputSex">Gender</label>
+                           <select id="inputSex" class="form-control filter">
+                              <option value="all">All Genders</option>
+                              <option value="male">Cis-Men</option>
+                              <option selected value="female">Cis-Women</option>
+                              <option value="transmale">Trans-Men</option>
+                              <option value="transfemale">Trans-Women</option>
+                              <option value="gnc">Gender Non-Conforming</option>
+                              <option value="dnc">Did Not Respond</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Disability Button -->
+                  <div class = "row">
+                     <div class="col-sm">
+                        <div class="form-group">
+                           <label for="inputDisability">Disability Status</label>
+                           <select id="inputDisability" class="form-control filter">
+                              <option value="all">All Statuses</option>
+                              <option selected value="disab">Yes</option>
+                              <option value="nodisab">No</option>
+                              <option value="dnc">Did Not Respond</option>
+                           </select>
+                        </div>
+                     </div>
+                     <!-- Veteran Button -->
+                     <div class="col-sm">
+                        <div class="form-group">
+                           <label for="inputVeteran">Veteran Status</label>
+                           <select id="inputVeteran" class="form-control filter">
+                            <option selected value="all">All Statuses</option>  
+                            <option value="vet">Yes</option>
+                              <option selected value="novet">No</option>
+                              <option value="dnc">Did Not Respond</option>
+                           </select>
+                        </div>
+                     </div>
+                     <!-- Income Button -->
+                     <div class="col-sm">
+                        <div class="form-group">
+                           <label for="inputIncome">Income (Quintile Breaks)</label>
+                           <select id="inputIncome" class="form-control filter">
+                              <option selected value="all">All Income Levels</option>
+                              <option value="200">$0-$200</option>
+                              <option value="200-500">$200-$500</option>
+                              <option value="500-800">$500-$800</option>
+                              <option selected value="800">$800-$2000</option>
+                              <option value="dnc">Did Not Respond</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+    
+            <!-- Graphs Container Area -->
+            <div class="container-fluid">
+               <!-- Page Heading -->
+               <h1 class="h3 mb-4 text-gray-800" id=selectProvider></h1>
+               <div class= 'col-6'>
+               <h4 class="h6 mb-4 text-gray-800" id=selectSentence> </h4>
+            </div>
+               <!-- Content Row -->
+               <div class="row">
+                  <div class="col-sm">
+                     <!-- Area Chart -->
+                     <div class="col-xl-12 col-lg-7">
+                        <div class="card shadow mb-4">
+                           <!-- Card Header - Dropdown -->
+                           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                              <h6 class="m-0 font-weight-bold text-primary">6 Month Time Horizon</h6>
+                           </div>
+                           <!-- Card Body -->
+                           <div class="card-body">
+                              <div class="chart-area">
+                                 <div id="sixMonthChart" style="height: 330px; width: 100%;"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- 12 Month Horizon Chart -->
+                  <div class="col-sm">
+                     <!-- Area Chart -->
+                     <div class="col-xl-12 col-lg-7">
+                        <div class="card shadow mb-4">
+                           <!-- Card Header - Dropdown -->
+                           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                              <h6 class="m-0 font-weight-bold text-primary">12 Month Time Horizon</h6>
+                           </div>
+                           <!-- Card Body -->
+                           <div class="card-body">
+                              <div class="chart-area">
+                                 <div id="sixMonthChart" style="height: 330px; width: 100%;"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Prediction Date Button -->
+               <div class= "row">
+                  <div class="col-4">
+                     <div class="form-group">
+                        <label for="inputrefDate">Date</label>
+                        <select id="inputrefDate" class="form-control filter">
+                           <!-- <option selected>Choose...</option> -->
+                           <option value="20190101">January 1, 2020</option>
+                           <option value="20190701">July 1, 2020</option>
+                           <option value="20200101">January 1, 2021</option>
+                           <option selected value="20200701">July 1, 2021</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- End of Main Content -->
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+               <div class="container my-auto">
+                  <div class="copyright text-center my-auto">
+                     <span>UPenn MUSA Practicum Spring 2021</span>
+                  </div>
+               </div>
+            </footer>
+            <!-- End of Footer -->
+         </div>
+         <!-- End of Content Wrapper -->
+      </div>
+      <!-- End of Page Wrapper -->
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+      </a>
+      <!-- Logout Modal-->
+      <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+               <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+               <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                  <a class="btn btn-primary" href="login.html">Logout</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Bootstrap core JavaScript-->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+      <!-- Core plugin JavaScript-->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <!-- Custom scripts for all pages-->
+      <script src="js/sb-admin-2.js"></script>
+      <!-- Page level plugins -->
+      <script src="vendor/chart.js/Chart.min.js"></script>
+      <!-- Page level custom scripts -->
+      <script src="js/demo/chart-area-demo.js"></script>
+      <script src="js/demo/chart-pie-demo.js"></script>
+      <script src="js/filter.js"></script>
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script> -->
+   </body>
+</html>
