@@ -8,7 +8,7 @@ $.ajax('https://raw.githubusercontent.com/Jalilg/public/main/rank_output/ServPro
 });
 
 var tooltipSettingsRank = {   
-            content: "{label}: {y} %",
+            content: "{label}: {y} % of Clients Homeless",
             animationEnabled: true,
             cornerRadius: 4      
         }
