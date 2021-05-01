@@ -129,11 +129,18 @@ $('.filter').change(applyFilter)
 //Create Bar Chart function that uses this data
 // var chartDat = convertData(providerDat)
 
+var tooltipSettingsPred = {   
+            content: "{label}: {y} %",
+            animationEnabled: true,
+            cornerRadius: 4      
+        }
+
 var createChart= function(data){
 
     sixMoChart= new CanvasJS.Chart(document.getElementById("sixMonthChart"), {
         animationEnabled: true,
-        theme: "light2", 
+        theme: "light2",
+        toolTip : tooltipSettingsPred, 
         title:{
             text: "Proportion of People Experiencing Homelessness" ,
             fontSize: 20,
@@ -164,6 +171,7 @@ var createChartTwelve= function(data){
     twelveMoChart= new CanvasJS.Chart(document.getElementById("twelveMonthChart"), {
         animationEnabled: true,
         theme: "light2", 
+        toolTip : tooltipSettingsPred, 
         title:{
             text: "Proportion of People Experiencing Homelessness" ,
             fontSize: 20,

@@ -7,11 +7,18 @@ $.ajax('https://raw.githubusercontent.com/Jalilg/public/main/rank_output/ServPro
   return provRank
 });
 
+var tooltipSettingsRank = {   
+            content: "{label}: {y} %",
+            animationEnabled: true,
+            cornerRadius: 4      
+        }
+
 window.onload = function () {
 
 var chart = new CanvasJS.Chart(document.getElementById("provRankChart"), {
 animationEnabled: true,
     theme: "light2", // "light1", "light2", "dark1", "dark2"
+    toolTip : tooltipSettingsRank,
     title: {
         text: ""
     },

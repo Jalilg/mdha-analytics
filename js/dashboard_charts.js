@@ -66,6 +66,12 @@ var tooltipSettings = {
             cornerRadius: 4      
         }
 
+var tooltipSettingsDur = {   
+            content: "{label} days: {y} clients",
+            animationEnabled: true,
+            cornerRadius: 4      
+        }
+
 window.onload = function () {
 
 var chart = new CanvasJS.Chart(document.getElementById("orgOverviewChart"), {
@@ -93,7 +99,7 @@ chart.render();
 var chart1 = new CanvasJS.Chart(document.getElementById("esOnlyDurationChart"), {
 animationEnabled: true,
     theme: "light2", // "light1", "light2", "dark1", "dark2"
-    toolTip : tooltipSettings,
+    toolTip : tooltipSettingsDur,
     title: {
         text: ""
     },
@@ -135,7 +141,7 @@ chart2.render();
 var chart3 = new CanvasJS.Chart(document.getElementById("housedOnlyDurationChart"), {
 animationEnabled: true,
     theme: "light2", // "light1", "light2", "dark1", "dark2"
-    toolTip : tooltipSettings,
+    toolTip : tooltipSettingsDur,
     title: {
         text: ""
     },
@@ -177,7 +183,7 @@ chart4.render();
 var chart5 = new CanvasJS.Chart(document.getElementById("homelessRehousedDurationChart"), {
 animationEnabled: true,
     theme: "light2", // "light1", "light2", "dark1", "dark2"
-    toolTip : tooltipSettings,
+    toolTip : tooltipSettingsDur,
     title: {
         text: ""
     },
@@ -219,7 +225,7 @@ chart6.render();
 var chart5 = new CanvasJS.Chart(document.getElementById("recurrenceDurationChart"), {
 animationEnabled: true,
     theme: "light2", // "light1", "light2", "dark1", "dark2"
-    toolTip : tooltipSettings,
+    toolTip : tooltipSettingsDur,
     title: {
         text: ""
     },
