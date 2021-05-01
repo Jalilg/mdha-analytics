@@ -154,9 +154,6 @@ var createChart= function(data){
         },
         data: [{        
             type: "column",  
-            showInLegend: true, 
-            legendMarkerColor: "grey",
-            legendText: "Services",
             dataPoints: data
         }]
     });
@@ -184,10 +181,7 @@ var createChartTwelve= function(data){
             maximum: 100,
         },
         data: [{        
-            type: "column",  
-            showInLegend: true, 
-            legendMarkerColor: "grey",
-            legendText: "Services",
+            type: "column",   
             dataPoints: data
         }]
     });
