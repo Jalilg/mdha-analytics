@@ -10003,6 +10003,22 @@ a:focus {
   justify-content: center;
 }
 
+.border-left-es {
+  border-left: 0.25rem solid #db7027 !important;
+}
+
+.border-left-th {
+  border-left: 0.25rem solid #d1842f !important;
+}
+
+.border-left-rrh {
+  border-left: 0.25rem solid #5383c3 !important;
+}
+
+.border-left-psh {
+  border-left: 0.25rem solid #244ba0 !important;
+}
+
 .border-left-primary {
   border-left: 0.25rem solid #4e73df !important;
 }
