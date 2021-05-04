@@ -83,6 +83,8 @@ animationEnabled: true,
     },
     axisY: {
         title: "# of Clients",
+        minimum: 0,
+        maximum: 6010,
     },
     axisX: {
         interval: 1,
@@ -105,6 +107,8 @@ animationEnabled: true,
     },
     axisY: {
         title: "# of Clients",
+        minimum: 0,
+        maximum: 11000,
     },
     axisX: {
         title: "# of days"
@@ -125,6 +129,8 @@ animationEnabled: true,
     },
     axisY: {
         title: "# of Clients",
+        minimum: 0,
+        maximum: 5300,
     },
     axisX: {
         interval: 1,
@@ -147,6 +153,8 @@ animationEnabled: true,
     },
     axisY: {
         title: "# of Clients",
+        minimum: 0,
+        maximum: 1200,
     },
     axisX: {
         title: "# of days"
@@ -167,6 +175,8 @@ animationEnabled: true,
     },
     axisY: {
         title: "# of Clients",
+        minimum: 0,
+        maximum: 550,
     },
     axisX: {
         interval: 1,
@@ -189,6 +199,8 @@ animationEnabled: true,
     },
     axisY: {
         title: "# of Clients",
+        minimum: 0,
+        maximum: 35,
     },
     axisX: {
         title: "# of days"
@@ -209,6 +221,8 @@ animationEnabled: true,
     },
     axisY: {
         title: "# of Clients",
+        minimum: 0,
+        maximum: 45,
     },
     axisX: {
         interval: 1,
@@ -231,6 +245,8 @@ animationEnabled: true,
     },
     axisY: {
         title: "# of Clients",
+        minimum: 0,
+        maximum: 200,
     },
     axisX: {
         title: "# of days"
@@ -251,6 +267,8 @@ animationEnabled: true,
     },
     axisY: {
         title: "# of Clients",
+        minimum: 0,
+        maximum: 310,
     },
     axisX: {
         interval: 1,
