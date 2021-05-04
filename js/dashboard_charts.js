@@ -82,11 +82,16 @@ animationEnabled: true,
         text: ""
     },
     axisY: {
+        labelFontSize: 14,
+        titleFontSize: 16,
         title: "# of Clients",
         minimum: 0,
         maximum: 6010,
+        margin: 20
     },
     axisX: {
+        labelFontSize: 14,
+        titleFontSize: 16,
         interval: 1,
         title: "Service Providers",
         labelAngle: 300

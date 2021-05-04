@@ -30,7 +30,6 @@ animationEnabled: true,
     axisX: {
         labelFontSize: 14,
         titleFontSize: 20,
-        titleFontSize: 20,
         interval: 1,
         title: "Service Providers",
         labelAngle: 315
