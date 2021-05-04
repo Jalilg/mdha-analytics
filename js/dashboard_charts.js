@@ -1,6 +1,6 @@
 // Area Chart Example
-var esOnlyRecentProvider;
-var housedOnlyRecentProvider;
+var esOnlyProvider;
+var housedOnlyProvider;
 var homelessRehousedProvider;
 var recurrenceProvider;
 
@@ -11,7 +11,7 @@ var homelessRehousedDuration;
 var recurrenceDuration;
 
 
-var orgLoad;
+var orgOverview;
 
 // var providerDataOne = require('./test.json'); //(with path)
 
