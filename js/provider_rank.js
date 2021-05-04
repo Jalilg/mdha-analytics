@@ -37,6 +37,7 @@ animationEnabled: true,
     },
     data: [{
         type: "column",
+        color: "#db7027",
         dataPoints: provRank
     }]
 });

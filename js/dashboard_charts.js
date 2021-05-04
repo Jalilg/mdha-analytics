@@ -93,6 +93,7 @@ animationEnabled: true,
     },
     data: [{
         type: "column",
+        color: "#6e707e",
         dataPoints: orgOverview
     }]
 });
@@ -115,6 +116,7 @@ animationEnabled: true,
     },
     data: [{
         type: "column",
+        color: "#db7027",
         dataPoints: esOnlyDuration
     }]
 });
@@ -139,6 +141,7 @@ animationEnabled: true,
     },
     data: [{
         type: "column",
+        color: "#db7027",
         dataPoints: esOnlyProvider
     }]
 });
@@ -161,6 +164,7 @@ animationEnabled: true,
     },
     data: [{
         type: "column",
+        color: "#244ba0",
         dataPoints: housedOnlyDuration
     }]
 });
@@ -185,6 +189,7 @@ animationEnabled: true,
     },
     data: [{
         type: "column",
+        color: "#244ba0",
         dataPoints: housedOnlyProvider
     }]
 });
@@ -207,6 +212,7 @@ animationEnabled: true,
     },
     data: [{
         type: "column",
+        color: "#244ba0",
         dataPoints: homelessRehousedDuration
     }]
 });
@@ -231,6 +237,7 @@ animationEnabled: true,
     },
     data: [{
         type: "column",
+        color: "#244ba0",
         dataPoints: homelessRehousedProvider
     }]
 });
@@ -253,6 +260,7 @@ animationEnabled: true,
     },
     data: [{
         type: "column",
+        color: "#5383c3",
         dataPoints: recurrenceDuration
     }]
 });
@@ -277,6 +285,7 @@ animationEnabled: true,
     },
     data: [{
         type: "column",
+        color: "#5383c3",
         dataPoints: recurrenceProvider
     }]
 });
