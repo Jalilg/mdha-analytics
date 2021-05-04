@@ -181,6 +181,7 @@ animationEnabled: true,
         title: "# of Clients",
         minimum: 0,
         maximum: 550,
+        margin: 10
     },
     axisX: {
         interval: 1,
@@ -229,6 +230,7 @@ animationEnabled: true,
         title: "# of Clients",
         minimum: 0,
         maximum: 45,
+        margin: 20
     },
     axisX: {
         interval: 1,
@@ -253,7 +255,7 @@ animationEnabled: true,
     axisY: {
         title: "# of Clients",
         minimum: 0,
-        maximum: 200,
+        maximum: 200
     },
     axisX: {
         title: "# of days"
@@ -277,6 +279,7 @@ animationEnabled: true,
         title: "# of Clients",
         minimum: 0,
         maximum: 310,
+        margin: 20
     },
     axisX: {
         interval: 1,
