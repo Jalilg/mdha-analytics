@@ -15,47 +15,47 @@ var orgOverview;
 
 // var providerDataOne = require('./test.json'); //(with path)
 
-$.ajax('https://raw.githubusercontent.com/Jalilg/public/main/dashboard_output/es_only_duration.json').done(function (dat) {
+$.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/dashboard_output/es_only_duration.json').done(function (dat) {
   esOnlyDuration = JSON.parse(dat)
   return esOnlyDuration
 });
 
-$.ajax('https://raw.githubusercontent.com/Jalilg/public/main/dashboard_output/es_only_providers.json').done(function (dat) {
+$.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/dashboard_output/es_only_providers.json').done(function (dat) {
   esOnlyProvider = JSON.parse(dat)
   return esOnlyProvider
 });
 
-$.ajax('https://raw.githubusercontent.com/Jalilg/public/main/dashboard_output/housed_only_duration.json').done(function (dat) {
+$.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/dashboard_output/housed_only_duration.json').done(function (dat) {
   housedOnlyDuration = JSON.parse(dat)
   return housedOnlyDuration
 });
 
-$.ajax('https://raw.githubusercontent.com/Jalilg/public/main/dashboard_output/housed_only_providers.json').done(function (dat) {
+$.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/dashboard_output/housed_only_providers.json').done(function (dat) {
   housedOnlyProvider = JSON.parse(dat)
   return housedOnlyProvider
 });
 
-$.ajax('https://raw.githubusercontent.com/Jalilg/public/main/dashboard_output/homeless_rehoused_duration.json').done(function (dat) {
+$.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/dashboard_output/homeless_rehoused_duration.json').done(function (dat) {
   homelessRehousedDuration = JSON.parse(dat)
   return homelessRehousedDuration
 });
 
-$.ajax('https://raw.githubusercontent.com/Jalilg/public/main/dashboard_output/homeless_rehoused_providers.json').done(function (dat) {
+$.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/dashboard_output/homeless_rehoused_providers.json').done(function (dat) {
   homelessRehousedProvider = JSON.parse(dat)
   return homelessRehousedProvider
 });
 
-$.ajax('https://raw.githubusercontent.com/Jalilg/public/main/dashboard_output/recurrence_duration.json').done(function (dat) {
+$.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/dashboard_output/recurrence_duration.json').done(function (dat) {
   recurrenceDuration = JSON.parse(dat)
   return recurrenceDuration
 });
 
-$.ajax('https://raw.githubusercontent.com/Jalilg/public/main/dashboard_output/recurrence_providers.json').done(function (dat) {
+$.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/dashboard_output/recurrence_providers.json').done(function (dat) {
   recurrenceProvider = JSON.parse(dat)
   return recurrenceProvider
 });
 
-$.ajax('https://raw.githubusercontent.com/Jalilg/public/main/dashboard_output/org_load.json').done(function (dat) {
+$.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/dashboard_output/org_load.json').done(function (dat) {
   orgOverview = JSON.parse(dat)
   return orgOverview
 });

@@ -2,7 +2,7 @@
 
 var provRank;
 
-$.ajax('https://raw.githubusercontent.com/Jalilg/public/main/rank_output/ServProvAggregagte20200701.json').done(function (dat) {
+$.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/rank_output/ServProvAggregagte20200701.json').done(function (dat) {
   provRank = JSON.parse(dat)
   return provRank
 });
