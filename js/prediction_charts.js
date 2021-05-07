@@ -35,7 +35,7 @@ var applyFilter = function () {
     var income = $("#inputIncome :selected").val(); // The value of the selected option
 
     //craft file name
-    var fileName = 'https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/app-output-v6/'+ serviceProvider +"_"+ refDate +"_" + race + "_" + gender + "_" + income +"_" + veteran + "_" + disability + "_" + ethnicity + ".json"
+    var fileName = 'https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/app-output-v5/'+ serviceProvider +"_"+ refDate +"_" + race + "_" + gender + "_" + income +"_" + veteran + "_" + disability + "_" + ethnicity + ".json"
     console.log(fileName)
 
     // //Ajax Call inside the function
