@@ -48,7 +48,7 @@ var applyFilter = function () {
         //Show Heading of provider
         $("#selectProvider").text(providerDat.Provider)
         //Craft Sentence
-        $("#selectSentence").text(`${makeProviderClause(providerDat)} who are ${makeEthnicityClause(providerDat)}, ${makeRaceClause(providerDat)}, ${makeGenderClause(providerDat)}, a ${makeDisabledClause(providerDat)} ${makeVeteranClause(providerDat)} and ${makeIncomeClause(providerDat)}, have ${providerDat.SixMoPredHomelessRate}% likelihood of being homeless within the next six months and ${providerDat.SixMoInvPredHomelessRate}% likelihood of staying housed in the next six months. They also have ${providerDat.TwelveMoPredHomelessRate}% likelihood of being homeless within the next twelve months and ${providerDat.TwelveMoInvPredHomelessRate}% likelihood of staying housed in the next twelve months `)
+        $("#selectSentence").text(`${makeProviderClause(providerDat)} who are ${makeEthnicityClause(providerDat)}, ${makeRaceClause(providerDat)}, ${makeGenderClause(providerDat)}, ${makeDisabledClause(providerDat)}, ${makeVeteranClause(providerDat)} and ${makeIncomeClause(providerDat)}, have a ${providerDat.SixMoPredHomelessRate}% likelihood of experiencing homelessness within the next six months and a ${providerDat.SixMoInvPredHomelessRate}% likelihood of staying housed in the next six months. They also have a ${providerDat.TwelveMoPredHomelessRate}% likelihood of experiencing homelessness within the next twelve months and a ${providerDat.TwelveMoInvPredHomelessRate}% likelihood of staying housed in the next twelve months `)
     })
     .fail(function(){
             $("#selectProvider").text('Error')
@@ -95,9 +95,9 @@ makeDisabledClause= function(providerData){
 }
 makeVeteranClause= function(providerData){
     if (providerData.Veteran==='all'){
-        return `veterans and non veterans`
+        return `Veterans and Non Veterans`
     } else{
-        return `${providerData.Veteran}`
+        return `a ${providerData.Veteran}`
     }
 }
 makeIncomeClause= function(providerData){
