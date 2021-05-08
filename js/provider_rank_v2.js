@@ -27,10 +27,13 @@ var config = {
       labels: labels,
       datasets: [{
          data: data,
-         backgroundColor: 'rgba(0, 119, 204, 0.3)'
+         backgroundColor: "#db7027"
       }]
    },
    options: {
+        legend: {
+            display: false
+        },
         scales: {
             y: {
                 beginAtZero: true
