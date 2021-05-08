@@ -11,7 +11,11 @@ $.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/rank_output
 });
 console.log(provRank)
 
-var labels = provRank.map(function(e) {
+
+
+window.onload = function () {
+
+    var labels = provRank.map(function(e) {
    return e.label;
 });
 var data = provRank.map(function(e) {
@@ -20,11 +24,10 @@ var data = provRank.map(function(e) {
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var config = {
-   type: 'line',
+   type: 'bar',
    data: {
       labels: labels,
       datasets: [{
-         label: 'Graph Line',
          data: data,
          backgroundColor: 'rgba(0, 119, 204, 0.3)'
       }]
@@ -41,3 +44,4 @@ var config = {
 };
 
 var chart = new Chart(ctx, config);
+}
