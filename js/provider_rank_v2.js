@@ -11,12 +11,10 @@ $.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/rank_output
 });
 console.log(provRank)
 
-
-
 window.onload = function () {
 
-    var labels = provRank.map(function(e) {
-   return e.label;
+var labels = provRank.map(function(e) {
+return e.label;
 });
 var data = provRank.map(function(e) {
    return e.y;
