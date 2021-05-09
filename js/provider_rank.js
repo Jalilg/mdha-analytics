@@ -17,7 +17,7 @@ $.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/rank_output
 });
 
 var makeProvRank = function (labels, data) {
-  var ctx = document.getElementById('myChart').getContext('2d');
+  var ctx = document.getElementById('provRankChart').getContext('2d');
   var config = {
      type: 'bar',
      data: {
