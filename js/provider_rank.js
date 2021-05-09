@@ -1,45 +1,46 @@
-
-
-var provRank;
+var provRank =[];
+var labels;
+var data;
 
 $.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/rank_output/ServProvAggregagte20200701.json').done(function (dat) {
   provRank = JSON.parse(dat)
-  makeProvRank(provRank);
+  console.log(provRank)
+
+  var labels = provRank.map(function(e) {
+    return e.label;
+  });
+  var data = provRank.map(function(e) {
+    return e.y;
   });
 
-var tooltipSettingsRank = {   
-            content: "{label}: {y} % of Clients Homeless",
-            animationEnabled: true,
-            cornerRadius: 4      
-        }
-
-var makeProvRank = function(dat) {
-
-var chart = new CanvasJS.Chart(document.getElementById("provRankChart"), {
-animationEnabled: true,
-    theme: "light2", // "light1", "light2", "dark1", "dark2"
-    toolTip : tooltipSettingsRank,
-    title: {
-        text: ""
-    },
-    axisY: {
-        labelFontSize: 14,
-        titleFontSize: 20,
-        title: "% of Clients Homeless",
-    },
-    axisX: {
-        labelFontSize: 14,
-        titleFontSize: 20,
-        interval: 1,
-        title: "Service Providers",
-        labelAngle: 315
-    },
-    data: [{
-        type: "column",
-        color: "#db7027",
-        dataPoints: provRank
-    }]
+  makeProvRank(labels, data)
 });
-chart.render();
 
+var makeProvRank = function (labels, data) {
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var config = {
+     type: 'bar',
+     data: {
+        labels: labels,
+        datasets: [{
+           data: data,
+           backgroundColor: "#db7027"
+        }]
+     },
+     options: {
+          legend: {
+              display: false
+          },
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          },
+          maintainAspectRatio: false,
+          responsive: true
+      }
+  };
+
+  var chart = new Chart(ctx, config);
+  return chart
 }
