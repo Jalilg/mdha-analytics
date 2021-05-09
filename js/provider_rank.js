@@ -27,25 +27,52 @@ var makeProvRank = function (labels, data) {
            backgroundColor: "#db7027"
         }]
      },
-    options: {
-          legend: {
-              display: false
-          },
-          scales: {
-              yAxes: [ {
+    options: 
+{
+            tooltips: {
+              callbacks: {
+                    label: function(tooltipItem, data) {
+                        var value = data.datasets[0].data[tooltipItem.index];
+                        return value + " % of clients Homeless";
+                    }
+              }, // end callbacks:
+              displayColors: false
+            }, //end tooltips
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    ticks: {
+                        autoSkip: false
+                    }
+                }],
+                yAxes: [{
                   type: 'linear',
-                  ticks: {
-                      beginAtZero: true,
-                      min : 0,
-                      max : 100,
-                      }
-                  } ]
-              //}
-           // }
-          },
-          maintainAspectRatio: false,
-          responsive: true
-      }
+                    scaleLabel: {
+                        display: true,
+                        labelString: '% of Clients'
+                    },
+                    ticks: {
+                        beginAtZero: true,
+                        min : 0,
+                        max : 100,
+                        userCallback: function(value, index, values) {
+                            // Convert the number to a string and splite the string every 3 charaters from the end
+                            value = value.toString();
+                            value = value.split(/(?=(?:...)*$)/);
+                            value = value.join(',');
+                            return value + " %";
+                        }
+                    }
+                }],
+                y: {
+                    beginAtZero: true
+                }
+            },
+            maintainAspectRatio: false,
+            responsive: true
+        }
   };
 
   var chart = new Chart(ctx, config);
