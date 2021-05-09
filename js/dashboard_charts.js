@@ -210,6 +210,12 @@ var makeEsOnlyDuration = function(labels, data) {
                 display: false
             },
             scales: {
+                xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: '# of Days'
+                    }
+                }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
@@ -255,7 +261,6 @@ var makeEsOnlyProvider = function(labels, data) {
                 display: false
             },
             scales: {
-
                 xAxes: [{
                     ticks: {
                         autoSkip: false
@@ -306,6 +311,12 @@ var makeHousedOnlyDuration = function(labels, data) {
                 display: false
             },
             scales: {
+                xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: '# of Days'
+                    }
+                }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
@@ -391,6 +402,12 @@ var makeHomelessRehousedDuration = function(labels, data) {
                 display: false
             },
             scales: {
+                xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: '# of Days'
+                    }
+                }],
                 y: {
                     beginAtZero: true
                 }
@@ -460,6 +477,12 @@ var makeRecurrenceDuration = function(labels, data) {
                 display: false
             },
             scales: {
+                xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: '# of Days'
+                    }
+                }],
                 y: {
                     beginAtZero: true
                 }
