@@ -27,14 +27,21 @@ var makeProvRank = function (labels, data) {
            backgroundColor: "#db7027"
         }]
      },
-     options: {
+    options: {
           legend: {
               display: false
           },
           scales: {
-              y: {
-                  beginAtZero: true
-              }
+              yAxes: [ {
+                  type: 'linear',
+                  ticks: {
+                      beginAtZero: true,
+                      min : 0,
+                      max : 100,
+                      }
+                  } ]
+              //}
+           // }
           },
           maintainAspectRatio: false,
           responsive: true
