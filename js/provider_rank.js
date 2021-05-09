@@ -4,8 +4,8 @@ var provRank;
 
 $.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/rank_output/ServProvAggregagte20200701.json').done(function (dat) {
   provRank = JSON.parse(dat)
-  return provRank
-});
+  makeProvRank(provRank);
+  });
 
 var tooltipSettingsRank = {   
             content: "{label}: {y} % of Clients Homeless",
@@ -13,7 +13,7 @@ var tooltipSettingsRank = {
             cornerRadius: 4      
         }
 
-window.onload = function () {
+var makeProvRank = function(dat) {
 
 var chart = new CanvasJS.Chart(document.getElementById("provRankChart"), {
 animationEnabled: true,
