@@ -130,18 +130,6 @@ $.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/dashboard_o
     makeOrgOverview(labels, data)
 });
 
-var tooltipSettings = {
-    content: "{label}: {y} clients",
-    animationEnabled: true,
-    cornerRadius: 4
-}
-
-var tooltipSettingsDur = {
-    content: "{label} days: {y} clients",
-    animationEnabled: true,
-    cornerRadius: 4
-}
-
 var makeOrgOverview = function(labels, data) {
     var ctx = document.getElementById('orgOverviewChart').getContext('2d');
     var config = {
@@ -161,9 +149,10 @@ var makeOrgOverview = function(labels, data) {
                         value = value.toString();
                         value = value.split(/(?=(?:...)*$)/);
                         value = value.join(',');
-                        return value;
+                        return value + " clients";
                     }
-              } // end callbacks:
+              }, // end callbacks:
+              displayColors: false
             }, //end tooltips
             legend: {
                 display: false
@@ -222,9 +211,10 @@ var makeEsOnlyDuration = function(labels, data) {
                         value = value.toString();
                         value = value.split(/(?=(?:...)*$)/);
                         value = value.join(',');
-                        return value;
+                        return value + " clients";
                     }
-              } // end callbacks:
+              }, // end callbacks:
+              displayColors: false
             }, //end tooltips
             legend: {
                 display: false
@@ -284,9 +274,10 @@ var makeEsOnlyProvider = function(labels, data) {
                         value = value.toString();
                         value = value.split(/(?=(?:...)*$)/);
                         value = value.join(',');
-                        return value;
+                        return value + " clients";
                     }
-              } // end callbacks:
+              }, // end callbacks:
+              displayColors: false
             }, //end tooltips
             legend: {
                 display: false
@@ -309,7 +300,7 @@ var makeEsOnlyProvider = function(labels, data) {
                             value = value.toString();
                             value = value.split(/(?=(?:...)*$)/);
                             value = value.join(',');
-                            return value;
+                            return value ;
                         }
                     }
                 }],
@@ -345,9 +336,10 @@ var makeHousedOnlyDuration = function(labels, data) {
                         value = value.toString();
                         value = value.split(/(?=(?:...)*$)/);
                         value = value.join(',');
-                        return value;
+                        return value + " clients";
                     }
-              } // end callbacks:
+              }, // end callbacks:
+              displayColors: false
             }, //end tooltips
             legend: {
                 display: false
@@ -407,9 +399,10 @@ var makeHousedOnlyProvider = function(labels, data) {
                         value = value.toString();
                         value = value.split(/(?=(?:...)*$)/);
                         value = value.join(',');
-                        return value;
+                        return value + " clients";
                     }
-              } // end callbacks:
+              }, // end callbacks:
+              displayColors: false
             }, //end tooltips
             legend: {
                 display: false
@@ -458,9 +451,10 @@ var makeHomelessRehousedDuration = function(labels, data) {
                         value = value.toString();
                         value = value.split(/(?=(?:...)*$)/);
                         value = value.join(',');
-                        return value;
+                        return value + " clients";
                     }
-              } // end callbacks:
+              }, // end callbacks:
+              displayColors: false
             }, //end tooltips
             legend: {
                 display: false
@@ -504,9 +498,10 @@ var makeHomelessRehousedProvider = function(labels, data) {
                         value = value.toString();
                         value = value.split(/(?=(?:...)*$)/);
                         value = value.join(',');
-                        return value;
+                        return value + " clients";
                     }
-              } // end callbacks:
+              }, // end callbacks:
+              displayColors: false
             }, //end tooltips
             legend: {
                 display: false
@@ -555,9 +550,10 @@ var makeRecurrenceDuration = function(labels, data) {
                         value = value.toString();
                         value = value.split(/(?=(?:...)*$)/);
                         value = value.join(',');
-                        return value;
+                        return value + " clients";
                     }
-              } // end callbacks:
+              }, // end callbacks:
+              displayColors: false
             }, //end tooltips
             legend: {
                 display: false
@@ -601,9 +597,10 @@ var makeRecurrenceProvider = function(labels, data) {
                         value = value.toString();
                         value = value.split(/(?=(?:...)*$)/);
                         value = value.join(',');
-                        return value;
+                        return value + " clients";
                     }
-              } // end callbacks:
+              }, // end callbacks:
+              displayColors: false
             }, //end tooltips
             legend: {
                 display: false
