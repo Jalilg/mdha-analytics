@@ -15,38 +15,34 @@
       <link href="css/sb-admin-2_ag.css" rel="stylesheet">
       <!-- Charts Script -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-
    </head>
    <body id="page-top">
-
-   	<!-- Modal -->
-<div id="introModal" class="modal fade">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Welcome</h5>
+      <!-- Modal -->
+      <div id="introModal" class="modal fade">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Welcome</h5>
+               </div>
+               <div class="modal-body">
+                  <h2>MDHA Analytics</h2>
+                  <br>
+                  <p>This project focuses on predicting homelessness using Emergency Shelter Bed Night services. </p>
+                  <p> <b>System Overview</b> shows an overview of the housing system. It focuses on service providers as a unit of analysis and uses this page to describe how clients move between providers through the housing system.</p>
+                  <p><b>Service Provider Rank</b> shows which Service Providers had the most clients predicted to be homeless.</p>
+                  <p> <b>Predicting Homelessness</b> helps examine individual service providers and demographics associated with clients to understand how that changes one’s likelihood of being homeless in both six and twelve month time horizons.</p>
+                  <hr class="style1">
+                  <p>Contact the team:</p>
+                  <h6>Tyler Bradford <a href = "mailto:tybradf@alumni.upenn.edu">tybradf@alumni.upenn.edu</a></h6>
+                  <h6>Al-Jalil Gault <a href = "mailto:gaulta@alumni.upenn.edu">gaulta@alumni.upenn.edu</a></h6>
+                  <h6>Tova Perlman <a href = "mailto:tovaperlman@gmail.com">tovaperlman@gmail.com</a></h6>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
       </div>
-      <div class="modal-body">
-       <h2>MDHA Analytics</h2>
-       <br>
-       
-    <p>This project focuses on predicting homelessness using Emergency Shelter Bed Night services. </p>
-    <p> <b>System Overview</b> shows an overview of the housing system. It focuses on service providers as a unit of analysis and uses this page to describe how clients move between providers through the housing system.</p>
-
-    <p><b>Service Provider Rank</b> shows which Service Providers had the most clients predicted to be homeless.</p>
-    <p> <b>Predicting Homelessness</b> helps examine individual service providers and demographics associated with clients to understand how that changes one’s likelihood of being homeless in both six and twelve month time horizons.</p>
-    <hr class="style1">
-    <p>Contact the team:</p>
-    <h6>Tyler Bradford <a href = "mailto:tybradf@alumni.upenn.edu">tybradf@alumni.upenn.edu</a></h6>
-    <h6>Al-Jalil Gault <a href = "mailto:gaulta@alumni.upenn.edu">gaulta@alumni.upenn.edu</a></h6>
-    <h6>Tova Perlman <a href = "mailto:tovaperlman@gmail.com">tovaperlman@gmail.com</a></h6>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
       <!-- Page Wrapper -->
       <div id="wrapper">
          <!-- Sidebar -->
@@ -101,124 +97,118 @@
                   <!-- Content Row -->
                   <div class="row">
                      <div class="col-4">
-                        
-                           <div class="card shadow" >
-                              <!-- Card Header -->
-                              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                 <h6 class="m-0 font-weight-bold text-dark"> Number of Clients by Project Type </h6>
-                              </div>
-                              <!-- Card Body -->
-                              <div class="card-body">
-                                 <div class="row">
-                                    <div class="col mb-4">
-                                       <!-- Earnings (Monthly) Card Example -->
-                                       <div class="card border-bottom-dark py-2" height="100">
-                                          <div class="card-body">
-                                             <div class="row no-gutters align-items-center">
-                                                <div class="col mr-2">
-                                                   <div class="h5 mb-0 font-weight-bold text-gray-800">30,574
-                                                   </div>
-                                                   <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
-                                                      Clients in the System
-                                                   </div>
+                        <div class="card shadow" >
+                           <!-- Card Header -->
+                           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                              <h6 class="m-0 font-weight-bold text-dark"> Number of Clients by Project Type </h6>
+                           </div>
+                           <!-- Card Body -->
+                           <div class="card-body">
+                              <div class="row">
+                                 <div class="col mb-4">
+                                    <!-- Earnings (Monthly) Card Example -->
+                                    <div class="card border-bottom-dark py-2" height="100">
+                                       <div class="card-body">
+                                          <div class="row no-gutters align-items-center">
+                                             <div class="col mr-2">
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">30,574
                                                 </div>
-                                                <div class="col-auto">
-                                                	<span style="color: #5a5c69;">
-                                                   <i class="fas fa-user fa-2x"></i>
-                                               </span>
+                                                <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
+                                                   Clients in the System
                                                 </div>
+                                             </div>
+                                             <div class="col-auto">
+                                                <span style="color: #5a5c69;">
+                                                <i class="fas fa-user fa-2x"></i>
+                                                </span>
                                              </div>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
-                                 
-                                    
-                                       <div class="row">
-                                          <div class="col mb-4" >
-                                             <!-- Earnings (Monthly) Card Example -->
-                                             <div class="card border-left-es py-2" style="height: 100%">
-                                                <div class="card-body">
-                                                   <div class="row no-gutters align-items-center">
-                                                      <div class="col mr-2">
-                                                         <div class="h5 mb-0 font-weight-bold text-es">13,782
-                                                         </div>
-                                                         <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
-                                                            Clients in Emergency Shelter
-                                                         </div>
-                                                      </div>
-                                                      <div class="col-auto">
-                                                         <img src="img/es.svg" height="50" width="50">
-                                                      </div>
-                                                   </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col mb-4" >
+                                    <!-- Earnings (Monthly) Card Example -->
+                                    <div class="card border-left-es py-2" style="height: 100%">
+                                       <div class="card-body">
+                                          <div class="row no-gutters align-items-center">
+                                             <div class="col mr-2">
+                                                <div class="h5 mb-0 font-weight-bold text-es">13,782
+                                                </div>
+                                                <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
+                                                   Clients in Emergency Shelter
                                                 </div>
                                              </div>
-                                          </div>
-                                          <!-- Force next columns to break to new line -->
-                                          <!-- Earnings (Monthly) Card Example -->
-                                          <div class="col mb-4">
-                                             <div class="card border-left-th py-2" style="height: 100%">
-                                                <div class="card-body">
-                                                   <div class="row no-gutters align-items-center">
-                                                      <div class="col mr-2">
-                                                         <div class="h5 mb-0 font-weight-bold text-th">705
-                                                         </div>
-                                                         <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
-                                                            Clients in Transitional Housing
-                                                         </div>
-                                                      </div>
-                                                      <div class="col-auto">
-                                                         <img src="img/th.svg" height="50" width="50">
-                                                      </div>
-                                                   </div>
-                                                </div>
+                                             <div class="col-auto">
+                                                <img src="img/es.svg" height="50" width="50">
                                              </div>
                                           </div>
                                        </div>
-                                       <div class="row mb-2">
-                                          <!-- Earnings (Monthly) Card Example -->
-                                          <div class = "col">
-                                             <div class="card border-left-rrh py-2" style="height: 100%">
-                                                <div class="card-body">
-                                                   <div class="row no-gutters align-items-center">
-                                                      <div class="col mr-2">
-                                                         <div class="h5 mb-0 font-weight-bold text-rrh">1,755
-                                                         </div>
-                                                         <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
-                                                            Clients in Rapid-Rehousing
-                                                         </div>
-                                                      </div>
-                                                      <div class="col-auto">
-                                                         <img src="img/rrh.svg" height="50" width="50">
-                                                      </div>
-                                                   </div>
+                                    </div>
+                                 </div>
+                                 <!-- Force next columns to break to new line -->
+                                 <!-- Earnings (Monthly) Card Example -->
+                                 <div class="col mb-4">
+                                    <div class="card border-left-th py-2" style="height: 100%">
+                                       <div class="card-body">
+                                          <div class="row no-gutters align-items-center">
+                                             <div class="col mr-2">
+                                                <div class="h5 mb-0 font-weight-bold text-th">705
+                                                </div>
+                                                <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
+                                                   Clients in Transitional Housing
                                                 </div>
                                              </div>
-                                          </div>
-                                          <!-- Force next columns to break to new line -->
-                                          <!-- Pending Requests Card Example -->
-                                          <div class = "col">
-                                             <div class="card border-left-psh py-2">
-                                                <div class="card-body">
-                                                   <div class="row no-gutters align-items-center">
-                                                      <div class="col mr-2">
-                                                         <div class="h5 mb-0 font-weight-bold text-psh">1,303
-                                                         </div>
-                                                         <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
-                                                            Clients in Permanent Supportive Housing
-                                                         </div>
-                                                      </div>
-                                                      <div class="col-auto">
-                                                         <img src="img/psh.svg" height="50" width="50">
-                                                      </div>
-                                                   </div>
-                                                </div>
+                                             <div class="col-auto">
+                                                <img src="img/th.svg" height="50" width="50">
                                              </div>
                                           </div>
                                        </div>
-                                    
-                                 
-                             
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row mb-2">
+                                 <!-- Earnings (Monthly) Card Example -->
+                                 <div class = "col">
+                                    <div class="card border-left-rrh py-2" style="height: 100%">
+                                       <div class="card-body">
+                                          <div class="row no-gutters align-items-center">
+                                             <div class="col mr-2">
+                                                <div class="h5 mb-0 font-weight-bold text-rrh">1,755
+                                                </div>
+                                                <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
+                                                   Clients in Rapid-Rehousing
+                                                </div>
+                                             </div>
+                                             <div class="col-auto">
+                                                <img src="img/rrh.svg" height="50" width="50">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- Force next columns to break to new line -->
+                                 <!-- Pending Requests Card Example -->
+                                 <div class = "col">
+                                    <div class="card border-left-psh py-2">
+                                       <div class="card-body">
+                                          <div class="row no-gutters align-items-center">
+                                             <div class="col mr-2">
+                                                <div class="h5 mb-0 font-weight-bold text-psh">1,303
+                                                </div>
+                                                <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
+                                                   Clients in Permanent Supportive Housing
+                                                </div>
+                                             </div>
+                                             <div class="col-auto">
+                                                <img src="img/psh.svg" height="50" width="50">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -232,17 +222,15 @@
                            <!-- Card Body -->
                            <div class="card-body" style="height: 450px;">
                               <div class="chart-container" style="position: relative; height:400px; width:100%">
-    <canvas id="orgOverviewChart"></canvas>
+                                 <canvas id="orgOverviewChart"></canvas>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
-
                   <hr class="style1">
                   <br>
                   <!-- Content Row -->
-
                   The data presents four main narratives that explain how individual clients interact with the homelessness system. Scroll to see each narrative, the service provider associated with them and the client duration in the system. 
                   <br></br>
                   <div class="row">
@@ -350,7 +338,7 @@
                            <!-- Card Body -->
                            <div class="card-body" style="height: 320px;">
                               <div class="chart-container" style="position: relative; height:280px; width:100%">
-    <canvas id="esOnlyProviderChart"></canvas>
+                                 <canvas id="esOnlyProviderChart"></canvas>
                               </div>
                            </div>
                         </div>
@@ -365,7 +353,7 @@
                            <!-- Card Body -->
                            <div class="card-body" style="height: 320px;">
                               <div class="chart-container" style="position: relative; height:280px; width:100%">
-    <canvas id="esOnlyDurationChart"></canvas>
+                                 <canvas id="esOnlyDurationChart"></canvas>
                               </div>
                            </div>
                         </div>
@@ -398,7 +386,7 @@
                            <!-- Card Body -->
                            <div class="card-body" style="height: 420px;">
                               <div class="chart-container" style="position: relative; height:380px; width:100%">
-    <canvas id="housedOnlyProviderChart"></canvas>
+                                 <canvas id="housedOnlyProviderChart"></canvas>
                               </div>
                            </div>
                         </div>
@@ -413,7 +401,7 @@
                            <!-- Card Body -->
                            <div class="card-body" style="height: 420px;">
                               <div class="chart-container" style="position: relative; height:380px; width:100%">
-    <canvas id="housedOnlyDurationChart"></canvas>
+                                 <canvas id="housedOnlyDurationChart"></canvas>
                               </div>
                            </div>
                         </div>
@@ -446,7 +434,7 @@
                            <!-- Card Body -->
                            <div class="card-body" style="height: 420px;">
                               <div class="chart-container" style="position: relative; height:380px; width:100%">
-    <canvas id="homelessRehousedProviderChart"></canvas>
+                                 <canvas id="homelessRehousedProviderChart"></canvas>
                               </div>
                            </div>
                         </div>
@@ -461,7 +449,7 @@
                            <!-- Card Body -->
                            <div class="card-body" style="height: 420px;">
                               <div class="chart-container" style="position: relative; height:380px; width:100%">
-    <canvas id="homelessRehousedDurationChart"></canvas>
+                                 <canvas id="homelessRehousedDurationChart"></canvas>
                               </div>
                            </div>
                         </div>
@@ -494,7 +482,7 @@
                            <!-- Card Body -->
                            <div class="card-body" style="height: 420px;">
                               <div class="chart-container" style="position: relative; height:380px; width:100%">
-    <canvas id="recurrenceProviderChart"></canvas>
+                                 <canvas id="recurrenceProviderChart"></canvas>
                               </div>
                            </div>
                         </div>
@@ -509,7 +497,7 @@
                            <!-- Card Body -->
                            <div class="card-body" style="height: 420px;">
                               <div class="chart-container" style="position: relative; height:380px; width:100%">
-    <canvas id="recurrenceDurationChart"></canvas>
+                                 <canvas id="recurrenceDurationChart"></canvas>
                               </div>
                            </div>
                         </div>
@@ -545,11 +533,11 @@
       <script src="js/scroll.js"></script>
       <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-<!-- Show Intro Modal -->
+      <!-- Show Intro Modal -->
       <script>
-  $(document).ready(function(){
-    $("#introModal").modal('show');
-  });
-</script>
+         $(document).ready(function(){
+           $("#introModal").modal('show');
+         });
+      </script>
    </body>
 </html>
