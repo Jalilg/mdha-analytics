@@ -1,4 +1,3 @@
-// Area Chart Example
 var esOnlyProvider;
 var housedOnlyProvider;
 var homelessRehousedProvider;
@@ -13,7 +12,6 @@ var recurrenceDuration;
 
 var orgOverview;
 
-// var providerDataOne = require('./test.json'); //(with path)
 
 $.ajax('https://raw.githubusercontent.com/Jalilg/mdha-analytics/main/dashboard_output/es_only_duration.json').done(function(dat) {
     esOnlyDuration = JSON.parse(dat)
