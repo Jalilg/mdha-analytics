@@ -154,6 +154,17 @@ var makeOrgOverview = function(labels, data) {
             }]
         },
         options: {
+            tooltips: {
+              callbacks: {
+                    label: function(tooltipItem, data) {
+                        var value = data.datasets[0].data[tooltipItem.index];
+                        value = value.toString();
+                        value = value.split(/(?=(?:...)*$)/);
+                        value = value.join(',');
+                        return value;
+                    }
+              } // end callbacks:
+            }, //end tooltips
             legend: {
                 display: false
             },
@@ -204,6 +215,17 @@ var makeEsOnlyDuration = function(labels, data) {
             }]
         },
         options: {
+            tooltips: {
+              callbacks: {
+                    label: function(tooltipItem, data) {
+                        var value = data.datasets[0].data[tooltipItem.index];
+                        value = value.toString();
+                        value = value.split(/(?=(?:...)*$)/);
+                        value = value.join(',');
+                        return value;
+                    }
+              } // end callbacks:
+            }, //end tooltips
             legend: {
                 display: false
             },
@@ -255,6 +277,17 @@ var makeEsOnlyProvider = function(labels, data) {
             }]
         },
         options: {
+            tooltips: {
+              callbacks: {
+                    label: function(tooltipItem, data) {
+                        var value = data.datasets[0].data[tooltipItem.index];
+                        value = value.toString();
+                        value = value.split(/(?=(?:...)*$)/);
+                        value = value.join(',');
+                        return value;
+                    }
+              } // end callbacks:
+            }, //end tooltips
             legend: {
                 display: false
             },
@@ -305,6 +338,17 @@ var makeHousedOnlyDuration = function(labels, data) {
             }]
         },
         options: {
+            tooltips: {
+              callbacks: {
+                    label: function(tooltipItem, data) {
+                        var value = data.datasets[0].data[tooltipItem.index];
+                        value = value.toString();
+                        value = value.split(/(?=(?:...)*$)/);
+                        value = value.join(',');
+                        return value;
+                    }
+              } // end callbacks:
+            }, //end tooltips
             legend: {
                 display: false
             },
@@ -356,6 +400,17 @@ var makeHousedOnlyProvider = function(labels, data) {
             }]
         },
         options: {
+            tooltips: {
+              callbacks: {
+                    label: function(tooltipItem, data) {
+                        var value = data.datasets[0].data[tooltipItem.index];
+                        value = value.toString();
+                        value = value.split(/(?=(?:...)*$)/);
+                        value = value.join(',');
+                        return value;
+                    }
+              } // end callbacks:
+            }, //end tooltips
             legend: {
                 display: false
             },
@@ -396,6 +451,17 @@ var makeHomelessRehousedDuration = function(labels, data) {
             }]
         },
         options: {
+            tooltips: {
+              callbacks: {
+                    label: function(tooltipItem, data) {
+                        var value = data.datasets[0].data[tooltipItem.index];
+                        value = value.toString();
+                        value = value.split(/(?=(?:...)*$)/);
+                        value = value.join(',');
+                        return value;
+                    }
+              } // end callbacks:
+            }, //end tooltips
             legend: {
                 display: false
             },
@@ -431,6 +497,17 @@ var makeHomelessRehousedProvider = function(labels, data) {
             }]
         },
         options: {
+            tooltips: {
+              callbacks: {
+                    label: function(tooltipItem, data) {
+                        var value = data.datasets[0].data[tooltipItem.index];
+                        value = value.toString();
+                        value = value.split(/(?=(?:...)*$)/);
+                        value = value.join(',');
+                        return value;
+                    }
+              } // end callbacks:
+            }, //end tooltips
             legend: {
                 display: false
             },
@@ -471,6 +548,17 @@ var makeRecurrenceDuration = function(labels, data) {
             }]
         },
         options: {
+            tooltips: {
+              callbacks: {
+                    label: function(tooltipItem, data) {
+                        var value = data.datasets[0].data[tooltipItem.index];
+                        value = value.toString();
+                        value = value.split(/(?=(?:...)*$)/);
+                        value = value.join(',');
+                        return value;
+                    }
+              } // end callbacks:
+            }, //end tooltips
             legend: {
                 display: false
             },
@@ -506,6 +594,17 @@ var makeRecurrenceProvider = function(labels, data) {
             }]
         },
         options: {
+            tooltips: {
+              callbacks: {
+                    label: function(tooltipItem, data) {
+                        var value = data.datasets[0].data[tooltipItem.index];
+                        value = value.toString();
+                        value = value.split(/(?=(?:...)*$)/);
+                        value = value.join(',');
+                        return value;
+                    }
+              } // end callbacks:
+            }, //end tooltips
             legend: {
                 display: false
             },
