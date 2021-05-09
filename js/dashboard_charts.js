@@ -160,6 +160,17 @@ var makeOrgOverview = function (labels, data) {
               display: false
           },
           scales: {
+            xAxes: [{
+      ticks: {
+        autoSkip: false
+      }
+    }],
+    yAxes: [{
+      scaleLabel: {
+        display: true,
+        labelString: '# of Clients'
+      }
+    }],
               y: {
                   beginAtZero: true
               }
@@ -218,6 +229,17 @@ var makeEsOnlyProvider = function (labels, data) {
               display: false
           },
           scales: {
+            xAxes: [{
+      ticks: {
+        autoSkip: false
+      }
+    }],
+    yAxes: [{
+      scaleLabel: {
+        display: true,
+        labelString: '# of Clients'
+      }
+    }],
               y: {
                   beginAtZero: true
               }
@@ -276,6 +298,17 @@ var makeHousedOnlyProvider = function (labels, data) {
               display: false
           },
           scales: {
+            xAxes: [{
+      ticks: {
+        autoSkip: false
+      }
+    }],
+    yAxes: [{
+      scaleLabel: {
+        display: true,
+        labelString: '# of Clients'
+      }
+    }],
               y: {
                   beginAtZero: true
               }
@@ -334,6 +367,17 @@ var makeHomelessRehousedProvider = function (labels, data) {
               display: false
           },
           scales: {
+            xAxes: [{
+      ticks: {
+        autoSkip: false
+      }
+    }],
+    yAxes: [{
+      scaleLabel: {
+        display: true,
+        labelString: '# of Clients'
+      }
+    }],
               y: {
                   beginAtZero: true
               }
@@ -392,6 +436,17 @@ var makeRecurrenceProvider = function (labels, data) {
               display: false
           },
           scales: {
+            xAxes: [{
+      ticks: {
+        autoSkip: false
+      }
+    }],
+    yAxes: [{
+      scaleLabel: {
+        display: true,
+        labelString: '# of Clients'
+      }
+    }],
               y: {
                   beginAtZero: true
               }
