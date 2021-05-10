@@ -460,6 +460,22 @@ var makeHomelessRehousedDuration = function(labels, data) {
                 display: false
             },
             scales: {
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: '# of Clients'
+                    },
+                    ticks: {
+                        beginAtZero: true,
+                        userCallback: function(value, index, values) {
+                            // Convert the number to a string and splite the string every 3 charaters from the end
+                            value = value.toString();
+                            value = value.split(/(?=(?:...)*$)/);
+                            value = value.join(',');
+                            return value;
+                        }
+                    }
+                }],
                 xAxes: [{
                     scaleLabel: {
                         display: true,
@@ -559,6 +575,22 @@ var makeRecurrenceDuration = function(labels, data) {
                 display: false
             },
             scales: {
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: '# of Clients'
+                    },
+                    ticks: {
+                        beginAtZero: true,
+                        userCallback: function(value, index, values) {
+                            // Convert the number to a string and splite the string every 3 charaters from the end
+                            value = value.toString();
+                            value = value.split(/(?=(?:...)*$)/);
+                            value = value.join(',');
+                            return value;
+                        }
+                    }
+                }],
                 xAxes: [{
                     scaleLabel: {
                         display: true,
